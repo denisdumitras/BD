@@ -63,7 +63,7 @@
 
 9. **Reports**
 
-![](https://github.com/gzaharia/BDC_Labs/blob/master/Laboratory_Work_N2/images/Reports.PNGhttps://github.com/denisdumitras/BD/blob/master/Lab2/images/Report.png
+![](https://github.com/denisdumitras/BD/blob/master/Lab2/images/Report.png
 
 ### Conclusion
 
