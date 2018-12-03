@@ -1,0 +1,18 @@
+1.
+select d.Disciplina as LengthOfDisciplina
+from discipline d
+where  LEN(d.Disciplina) > 20;
+
+2.
+select distinct p.Nume_Profesor, p.Prenume_Profesor, Nota
+ from profesori p
+ inner join studenti_reusita sr on p.Id_Profesor=sr.Id_Profesor
+ inner join discipline d on sr.Id_Disciplina=d.Id_Disciplina
+ inner join studenti s on s.Id_Student=sr.Id_Student
+ where Nota<5 and Nume_Student = 'Cosovanu';
+
+3.
+select distinct p.Nume_Profesor,p.Prenume_Profesor from profesori p 
+inner join studenti_reusita sr on p.Id_Profesor=sr.Id_Profesor
+inner join discipline d on d.Id_Disciplina=sr.Id_Disciplina
+where d.Disciplina='Baze de date ' and sr.Data_Evaluare like '2018%' and sr.Nota < 5;
