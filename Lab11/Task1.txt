@@ -1,0 +1,7 @@
+EXEC sp_addumpdevice 'DISK','device01','D:\Sql Server\BACKUP\Backup_Lab11\exercitiul1.bak'
+GO
+BACKUP DATABASE universitatea 
+TO device01  
+   WITH FORMAT,  
+      MEDIANAME = 'Lab11_Task1',  
+      NAME = 'Full Backup of universitatea';  
